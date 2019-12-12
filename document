@@ -1,1 +1,3 @@
 http://commons.openshift.org/events.html#event|distributed-tracing-with-jaeger-prometheus-on-kubernetes-with-yuri-shkuro-uber-greg-brown-red-hat|281
+
+Error response from daemon: cgroup-parent for systemd cgroup should be a valid slice named as "xxx.slice"
