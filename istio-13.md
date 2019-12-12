@@ -10,4 +10,5 @@
     Image:       grafana/grafana:6.1.6
     Image:       quay.io/kiali/kiali:v1.4
 
+docker.io/istio/kubectl:1.3.0"
 ```
