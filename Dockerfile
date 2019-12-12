@@ -1,1 +1,10 @@
 FROM pgbi/kong-dashboard
+FROM       docker.io/istio/citadel:1.3.0
+FROM      docker.io/istio/galley:1.3.0
+FROM      docker.io/istio/mixer:1.3.0
+FROM       docker.io/istio/pilot:1.3.0
+FROM      docker.io/istio/proxyv2:1.3.0
+FROM       docker.io/istio/sidecar_injector:1.3.0
+FROM      docker.io/jaegertracing/all-in-one:1.12
+FROM      docker.io/prom/prometheus:v2.8.0
+FROM       quay.io/kiali/kiali:v1.4
