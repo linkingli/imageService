@@ -11,4 +11,5 @@
     Image:       quay.io/kiali/kiali:v1.4
 
 docker.io/istio/kubectl:1.3.0"
+docker.io/istio/proxy_init:1.3.0"
 ```
