@@ -9,7 +9,7 @@ Image:         docker.io/istio/sidecar_injector:1.2.10
 Image:         docker.io/jaegertracing/all-in-one:1.9
 Image:         docker.io/prom/prometheus:v2.8.0
 Image:         quay.io/kiali/kiali:v0.20
-
+Image:         docker.io/istio/proxy_init:1.2.10
 ```
 ```
 cat sh  | grep harbor.test.com | awk '{print "docker pull "$1":"$2}' | sh
