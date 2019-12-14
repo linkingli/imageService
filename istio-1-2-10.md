@@ -12,6 +12,10 @@ Image:         quay.io/kiali/kiali:v0.20
 
 ```
 ```
+cat sh  | grep harbor.test.com | awk '{print "docker pull "$1":"$2}' | sh
+docker load -i istio-1-2-10-allinone.tar
+```
+```
   docker tag    istio/citadel:1.2.10   docker.io/istio/citadel:1.2.10
   docker tag    istio/galley:1.2.10  docker.io/istio/galley:1.2.10
   docker tag    istio/kubectl:1.2.10  docker.io/istio/kubectl:1.2.10
