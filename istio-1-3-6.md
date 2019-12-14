@@ -10,7 +10,7 @@ Image:         docker.io/jaegertracing/all-in-one:1.14
 Image:         docker.io/prom/prometheus:v2.8.0
 Image:         grafana/grafana:6.1.6
 Image:         quay.io/kiali/kiali:v1.4
-
+Image:         docker.io/istio/proxy_init:1.3.6
 ```
 
 ```
