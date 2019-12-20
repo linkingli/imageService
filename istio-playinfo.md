@@ -29,3 +29,6 @@ fortio/fortio:latest_release
 ```
 tutum/curl
 ```
+```
+governmentpaas/curl-ssl
+```
