@@ -23,4 +23,5 @@ docker.io/istio/tcp-echo-server:1.1
 
 ```
 docker.io/kennethreitz/httpbin
+fortio/fortio:latest_release
 ```
