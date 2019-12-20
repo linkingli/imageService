@@ -20,3 +20,7 @@ docker tag istio/examples-bookinfo-reviews-v3:1.15.0   docker.io/istio/examples-
 ```
 docker.io/istio/tcp-echo-server:1.1
 ```
+
+```
+docker.io/kennethreitz/httpbin
+```
