@@ -5,6 +5,7 @@
   velero/velero-plugin-for-aws:v1.0.0
   velero/velero:v1.2.0
 ```
+https://velero.io/docs/v1.2.0/contributions/minio/
 
 ```
 
@@ -17,7 +18,10 @@ aws_access_key_id = minio
 aws_secret_access_key = minio123
 EOF
 
+tar -xvf <RELEASE-TARBALL-NAME>.tar.gz -C /dir/to/extract/to
 cp velero /usr/local/bin/
+
+
 velero install \
     --image velero/velero:v1.1.0 \
     --provider aws \
