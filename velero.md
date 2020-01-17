@@ -23,6 +23,7 @@ velero install \
     --namespace velero \
     --secret-file ./credentials-velero \
     --velero-pod-cpu-request 200m \
+    --plugins velero/velero-plugin-for-aws:v1.0.0
     --velero-pod-mem-request 200Mi \
     --velero-pod-cpu-limit 1000m \
     --velero-pod-mem-limit 1000Mi \
