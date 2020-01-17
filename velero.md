@@ -49,3 +49,7 @@ velero install \
     --use-volume-snapshots=false \
     --backup-location-config region=minio,s3ForcePathStyle="true",s3Url=http://minio.velero.svc:9000
 ```
+```
+velero schedule create velero-test-daily --schedule="0 1 * * *" --include-namespaces velero-test
+
+```
