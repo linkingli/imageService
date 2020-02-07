@@ -1,10 +1,10 @@
 tc网络连接故障
 ```
-  该命令将 eth0 网卡的传输设置为随机丢掉 1% 的数据包。
-  tc  qdisc  add  dev  eth0  root  netem  loss  1%
-  tc  qdisc  add  dev  docker0  root  netem  loss  1%
-  该命令将 eth0 网卡的传输设置为延迟 100ms ± 10ms （90 ~ 110 ms 之间的任意值）发送。
-  tc  qdisc  add  dev  eth0  root  netem  delay  100ms  10ms
+  该命令将 eth0,docker0 网卡的传输设置为随机丢掉 5%,15%,25% 的数据包。
+  tc  qdisc  add  dev  eth0  root  netem  loss  5%  
+  tc  qdisc  add  dev  docker0  root  netem  loss  5%   
+  该命令将 eth0 网卡的传输设置为延迟 100ms/500ms/1000ms ± 10ms （90 ~ 110 ms 之间的任意值）发送。
+  tc  qdisc  add  dev  eth0  root  netem  delay  100ms  10ms   
   tc  qdisc  add  dev  docker0  root  netem  delay  100ms  10ms
   恢复网卡故障
   tc qdisc del dev eth0 root
