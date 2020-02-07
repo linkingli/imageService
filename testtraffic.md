@@ -34,3 +34,7 @@ dd磁盘占满
    删除
    rm bill_test
    ```
+关机
+  ```
+  reboot
+  ```
