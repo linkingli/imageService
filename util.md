@@ -17,3 +17,28 @@ pod 反亲和性
             weight: 100
 
 ```
+```
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - preference:
+              matchExpressions:
+              - key: nodeType
+                operator: In
+                values:
+                - controller
+            weight: 100
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - podAffinityTerm:
+              labelSelector:
+                matchLabels:
+                  app: redis-failover
+                  component: sentinel
+                  creator: redisfailover
+                  redisfailover: os-redis
+                  sentinel: os-redis
+              topologyKey: kubernetes.io/hostname
+            weight: 100
+
+```
