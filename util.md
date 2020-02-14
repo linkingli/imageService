@@ -18,6 +18,16 @@ pod 反亲和性
 
 ```
 ```
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: redis-failover
+        component: sentinel
+        creator: redisfailover
+        redisfailover: os-redis
+        sentinel: os-redis
+    spec:
       affinity:
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
@@ -38,7 +48,6 @@ pod 反亲和性
                   creator: redisfailover
                   redisfailover: os-redis
                   sentinel: os-redis
-              topologyKey: kubernetes.io/hostname
-            weight: 100
+              topologyKey: ku
 
 ```
