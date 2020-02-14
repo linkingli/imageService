@@ -48,6 +48,9 @@ pod 反亲和性
                   creator: redisfailover
                   redisfailover: os-redis
                   sentinel: os-redis
-              topologyKey: ku
+              topologyKey: kubernetes.io/hostname
+            weight: 100
+
+   
 
 ```
