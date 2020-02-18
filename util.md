@@ -54,3 +54,15 @@ pod 反亲和性
    
 
 ```
+
+```
+
+kubectl patch deployment patch-demo --patch "$(cat patch-file-containers.yaml)"
+
+spec:
+  template:
+    spec:
+      containers:
+      - name: patch-demo-ctr-2
+        image: redis
+```
