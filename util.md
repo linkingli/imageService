@@ -66,3 +66,10 @@ spec:
       - name: patch-demo-ctr-2
         image: redis
 ```
+
+```
+      - name: MY_NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+```
