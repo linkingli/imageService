@@ -20,3 +20,16 @@ image: harbor-ui:v1.1.0
 ```
 https://ruzickap.github.io/k8s-harbor/#links
 ```
+
+```
+my-release-harbor-chartmuseum-79b8f54596-7dcb9     0/1     ContainerCreating   0          84s
+my-release-harbor-clair-7899bb4c98-tw62r           0/2     ContainerCreating   0          84s
+my-release-harbor-core-6cdf99c79d-wdlf7            0/1     ContainerCreating   0          84s
+my-release-harbor-database-0                       0/1     Init:0/2            0          73s
+my-release-harbor-jobservice-5576977f59-k6ftr      0/1     ContainerCreating   0          84s
+my-release-harbor-notary-server-7cb669b47f-fxqxl   0/1     ContainerCreating   0          84s
+my-release-harbor-notary-signer-6df446c656-krdvf   0/1     ContainerCreating   0          84s
+my-release-harbor-portal-dc4f56754-q2c8r           0/1     ContainerCreating   0          84s
+my-release-harbor-redis-0                          0/1     ContainerCreating   0          75s
+my-release-harbor-registry-c4d5564bd-bbxf9         0/2     ContainerCreating   0          84s
+```
