@@ -35,3 +35,5 @@ my-release-harbor-registry-c4d5564bd-bbxf9         0/2     ContainerCreating   0
 ```
 
 tiller standard_init_linux.go:178: exec user process caused "exec format error"
+
+https://gitlab.com/gitlab-org/gitlab-foss/issues/64044
