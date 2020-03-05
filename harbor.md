@@ -33,3 +33,5 @@ my-release-harbor-portal-dc4f56754-q2c8r           0/1     ContainerCreating   0
 my-release-harbor-redis-0                          0/1     ContainerCreating   0          75s
 my-release-harbor-registry-c4d5564bd-bbxf9         0/2     ContainerCreating   0          84s
 ```
+
+tiller standard_init_linux.go:178: exec user process caused "exec format error"
