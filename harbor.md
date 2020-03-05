@@ -17,3 +17,6 @@ image: nginx:v1.13.1
 os-harbor-ui
 image: harbor-ui:v1.1.0
 ```
+```
+https://ruzickap.github.io/k8s-harbor/#links
+```
