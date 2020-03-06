@@ -8,3 +8,15 @@
 2.双主复制不存在这些问题，数据多点存放，而且扩容更改高可用模式操作简单，可以更换成主主从等模式。
 
 ```
+
+双朱复制
+```
+
+$ wget https://github.com/vmware/harbor/releases/download/v1.1.2/harbor-online-installer-v1.1.2.tgz
+$ tar xvf harbor-online-installer-v1.1.2.tgz
+
+
+配置文件:
+hostname: 172.19.195.212
+
+```
