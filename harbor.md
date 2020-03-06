@@ -40,4 +40,6 @@ https://gitlab.com/gitlab-org/gitlab-foss/issues/64044
 https://gitlab.com/gitlab-org/gitlab-foss/-/merge_requests/31887
 
 https://github.com/helm/helm/issues/3269
+
+https://github.com/helm/helm/pull/4200
 ```
