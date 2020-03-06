@@ -18,6 +18,7 @@ $ tar xvf harbor-online-installer-v1.1.2.tgz
 
 主要配置文件:
 harbor.conf   在hostname配置多节点如10.125.30.125，10.125.30.126
+
 # cat harbor.cfg 
 _version = 1.5.0
 hostname = repository.skong.com
@@ -75,5 +76,28 @@ uaa_ca_cert = /path/to/ca.pem
 registry_storage_provider_name = filesystem
 registry_storage_provider_config =
 ################################################################
+
+
+这种方式安装的hat仍然需要使用高可用的存储
+  registry:
+    image: vmware/registry-photon:v2.6.2-v1.5.0
+    container_name: registry
+    restart: always
+    volumes:
+      - /data/harbor-data/registry:/storage:z
+      - ./common/config/registry/:/etc/registry/:z
+    networks:
+      - harbor 
+    environment:
+      - GODEBUG=netdns=cgo
+    command:
+      ["serve", "/etc/registry/config.yml"]
+    depends_on:
+      - log
+    logging:
+      driver: "syslog"
+      options:  
+        syslog-address: "tcp://127.0.0.1:1514"
+        tag: "registry"
 
 ```
