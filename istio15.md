@@ -226,3 +226,10 @@ spec:
 ...
 
 ```
+    Image:         docker.io/istio/proxyv2:1.5.0
+    Image:         docker.io/istio/proxyv2:1.5.0
+    Image:         docker.io/istio/proxyv2:1.5.0
+    Image:          docker.io/jaegertracing/all-in-one:1.16
+    Image:         quay.io/kiali/kiali:v1.14
+    Image:         docker.io/prom/prometheus:v2.15
+```
